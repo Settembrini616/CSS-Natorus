@@ -1,0 +1,29 @@
+/*
+lIGHT GREEN:#7ed56f
+Medium GREEN:#55c57a
+DARK GREEN:# 28b485
+
+*/
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+
+
+@import "./base/base";
+@import "./base/animations";
+@import "./base/typography";
+@import "./base/utilities";
+
+
+@import "./pages/home";
+@import "./components/button";
+@import "./layout/header";
+
+
+
+
+
+
+
+
