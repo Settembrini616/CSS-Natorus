@@ -1,21 +1,5 @@
-@mixin clearfix{
-    &::after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-@mixin colorfulFontsPics($colorOne:$color-primary-light, $colorTwo:$color-primary-dark){
-    background-image: linear-gradient(to right, $colorOne, $colorTwo);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-@mixin setRow($widthOfRow:$grid-width){
-    
 .row{
-    max-width: $widthOfRow;
+    max-width: $grid-width;
  
     margin: 0 auto;
 
@@ -80,12 +64,8 @@
 
     @include clearfix;
 }
-}
 
 
-@mixin centerAnything(){
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.row-alt{
+    @include setRow(150rem)
 }
